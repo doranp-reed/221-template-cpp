@@ -1,5 +1,5 @@
-test: test.c mylib.c
-	gcc -o test test.c mylib.c
+test: test.cpp mylib.cpp
+	g++ -o test test.cpp mylib.cpp
 
-submit.zip: Makefile mylib.c mylib.h README_penner.md test.c
-	zip submit.zip Makefile mylib.c mylib.h README_penner.md test.c
+submit.zip: Makefile mylib.cpp mylib.hpp README_penner.md test.cpp
+	zip submit.zip Makefile mylib.cpp mylib.hpp README_penner.md test.cpp
